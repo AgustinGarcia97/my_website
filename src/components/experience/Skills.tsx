@@ -12,8 +12,15 @@ import {
 import {SkillCard} from "./SkillCard.tsx";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import 'swiper/css';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import 'swiper/css/navigation';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import 'swiper/css/pagination';
 import Box from '@mui/material/Box';
 
@@ -41,10 +48,10 @@ export const Skills = () => {
 
     return (
         <Grid container sx={{display:'flex', justifyContent: 'center', flexDirection:'column'}}>
-            <Grid item xs={12}>
+            <Grid size={{xs:12}} >
                 <Typography sx={{...home.about_me.title}}>{title}</Typography>
             </Grid>
-            <Grid item xs={12} sx={{width: '100%', maxWidth: '1200px', margin: '0 auto'}}>
+            <Grid size={{xs:12}} sx={{width: '100%', maxWidth: '1200px', margin: '0 auto'}}>
                 <Swiper
                     modules={[Navigation, Pagination]}
                     spaceBetween={30}

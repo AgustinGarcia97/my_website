@@ -1,8 +1,9 @@
 import {drawerState} from "./reducers/navbarSlice.ts";
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
 import {languageSlice} from "./reducers/languageSlice.ts";
-import type {Language} from './reducers/languageSlice';
+
 import {dialogSlice} from "./reducers/drawerSlice.ts";
+import type {Language} from "../data/WebSiteData.ts";
 
 export type RootState = {
     languageSelector: {

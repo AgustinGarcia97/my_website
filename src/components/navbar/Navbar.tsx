@@ -1,11 +1,11 @@
 import {AppBar, Box, IconButton, List, ListItem, Toolbar, Typography, Menu, MenuItem} from "@mui/material";
-import {type Language, navbar_items, navbar_items_by_lang} from "../../data/WebSiteData.ts";
+import {type Language,  navbar_items_by_lang} from "../../data/WebSiteData.ts";
 import {navbar_style} from "../../styles/styles.ts"
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
 import {EnFlag} from "../../assets/icons/EnIcon.tsx";
 import {EsFlag} from "../../assets/icons/EsFlag.tsx";
-import {DeFlag} from "../../assets/icons/DeFlag.tsx";
+
 import { WorldIcon } from "../../assets/icons/WorldIcon";
 import {useDispatch, useSelector} from "react-redux";
 import {switchLanguage} from "../../redux/reducers/languageSlice.ts";

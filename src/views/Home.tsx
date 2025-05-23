@@ -7,16 +7,14 @@ import { Skills} from "../components/experience/Skills.tsx";
 import {Projects} from "../components/projects/Projects.tsx";
 
 import {DialogCard} from "../components/experience/DialogCard.tsx";
-import {dialogSlice} from "../redux/reducers/drawerSlice.ts";
-import type {RootState} from "../redux/store.ts";
-import {useSelector} from "react-redux";
+
 
 import { ContactDialog } from '../components/contact/ContactDialog.tsx';
-import {Contact} from "../components/contact/Contact.tsx";
+
 
 
 export const Home = () => {
-    const open = useSelector((state: RootState) => state.dialog.open);
+
     return (
         <Box id="home" sx={{ ...home.box }}>
             <Grid container spacing={2} sx={{display:"flex",justifyContent:"center"}} >

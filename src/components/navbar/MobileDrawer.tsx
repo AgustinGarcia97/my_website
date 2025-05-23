@@ -1,4 +1,4 @@
-import { Drawer, List, ListItem, Typography, IconButton, Box } from "@mui/material";
+import { Drawer, List, ListItem, Typography, IconButton } from "@mui/material";
 
 import { navbar_items } from "../../data/WebSiteData.ts";
 import { useSelector, useDispatch } from "react-redux";

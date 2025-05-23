@@ -1,7 +1,6 @@
 import {Box, Typography} from "@mui/material"
-import {useDispatch, useSelector} from "react-redux";
-import {openSkillDialog} from "../../redux/reducers/drawerSlice.ts";
-import type {RootState} from "../../redux/store.ts";
+import {useDispatch} from "react-redux";
+
 
 interface SkillCardProps {
     skill?: { title: string; photo_url: string; box_shadow: string } | {
@@ -12,11 +11,7 @@ interface SkillCardProps {
 }
 
 export const SkillCard = ({skill}: SkillCardProps) => {
-    const dispatch = useDispatch();
-    const   handleClick = () => {
-        dispatch(openSkillDialog(skill))
-    }
-
+    useDispatch();
     const skill_card = {
         box: {
 
