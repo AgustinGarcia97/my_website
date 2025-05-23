@@ -10,11 +10,11 @@ function App() {
   return (
 
         <Provider store={store}>
-            <HashRouter>
+
                 <Navbar/>
                 <RoutestList/>
                 <Footer/>
-            </HashRouter>
+
         </Provider>
 
   )
