@@ -5,16 +5,16 @@ import "./styles/globalStyles.css";
 import {Provider} from "react-redux";
 import {store} from "./redux/store.ts";
 import {Footer} from "./components/footer/Footer.tsx";
-
+import { HashRouter } from 'react-router-dom';
 function App() {
   return (
 
         <Provider store={store}>
-            <BrowserRouter>
+            <HashRouter>
                 <Navbar/>
                 <RoutestList/>
                 <Footer/>
-            </BrowserRouter>
+            </HashRouter>
         </Provider>
 
   )
